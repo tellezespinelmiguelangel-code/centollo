@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Centollo - Contacto</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <i class="fas fa-crab logo-icon"></i>
+            <img src="../imagenes/descarga.png" alt="El Centollo">
+            <h1 class="logo-text">El Centollo</h1>
+        </div>
+        <nav class="navbar">
+            <a href="../index.html">Inicio</a>
+            <a href="menu.html">Menú</a>
+            <a href="contacto.html" class="active">Contacto</a>
+            <a href="ubicacion.html">Ubicación</a>
+            <a href="reservas.html">Reservas</a>
+                <a href="creditos.html">creditos</a>
+        </nav>
+    </header>
+
+    <section class="contact-section">
+        <div class="contact-header">
+            <h2>Contacto</h2>
+            <p>Ante cualquier duda o sugerencia, por favor, póngase en contacto con nosotros. Estamos aquí para atenderle.</p>
+        </div>
+
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info-box">
+                    <h3><i>Atención al cliente</i></h3>
+                    <p>Lunes a viernes de 8:00 a 14:30 horas.</p>
+                    <p>Sábados de 8:00 a 14:00 horas.</p>
+                    <p>Domingos y festivos cerrada.</p>
+                </div>
+
+                <div class="contact-info-box">
+                    <h3><i>Datos de contacto</i></h3>
+                    <p><strong>Dirección:</strong> Calle de Juan Montalvo, 14, 28040 Madrid</p>
+                    <p><strong>Teléfono:</strong> 91 533 15 76</p>
+                    <p><strong>Fax:</strong> 91 553 77 36</p>
+                    <p><strong>Email:</strong> <a href="mailto:corunesas@pescaderiascorunesas.es">corunesas@pescaderiascorunesas.es</a></p>
+                </div>
+            </div>
+
+            <!-- QR EN LUGAR DEL FORMULARIO -->
+            <div class="form-container" style="text-align: center; padding: 40px;">
+                <div class="form-logo">
+                    <i class="fas fa-crab logo-icon"></i>
+                    <h3>El Centollo</h3>
+                </div>
+                <h4>Escanea para contactarnos</h4>
+                <p class="form-desc">Escanea el código QR para más información</p>
+                
+                <div style="margin: 20px 0;">
+                    <img src="../imagenes/codigo 2.png" alt="Código QR de contacto" style="max-width: 200px; width: 100%; height: auto;">
+                </div>
+                
+                <p style="color: #666; font-size: 14px; margin-top: 15px;">
+                    <i class="fas fa-camera"></i> Usa la cámara de tu teléfono
+                </p>
+            </div>
+            <!-- FIN QR -->
+        </div>
+    </section>
+    <!-- CHATBOT -->
+<button class="chatbot-boton" onclick="toggleChatbot()">
+    <i class="fas fa-comments"></i>
+</button>
+
+<div class="chatbot-contenedor" id="chatbot">
+    <div class="chatbot-header">
+        <h3><i class="fas fa-crab"></i> El Centollo - Contacto</h3>
+        <p>Asistente virtual - ¿En qué puedo ayudarte?</p>
+    </div>
+    
+    <div class="chatbot-mensajes" id="chatbot-mensajes">
+        <div class="mensaje bot">
+            <i class="fas fa-robot"></i> ¡Hola! Pregúntame sobre contacto:
+        </div>
+    </div>
+    
+    <div class="chatbot-preguntas">
+        <p>Preguntas sobre contacto:</p>
+        <button class="pregunta-btn" onclick="enviarPregunta('¿Cómo puedo contactarlos?')">¿Cómo puedo contactarlos?</button>
+        <button class="pregunta-btn" onclick="enviarPregunta('¿Cuánto tardan en responder?')">¿Cuánto tardan en responder?</button>
+        <button class="pregunta-btn" onclick="enviarPregunta('¿Puedo enviar una queja?')">¿Puedo enviar una queja?</button>
+        <button class="pregunta-btn" onclick="enviarPregunta('¿Cuáles son los horarios?')">¿Cuáles son los horarios?</button>
+        <button class="pregunta-btn" onclick="enviarPregunta('¿Dónde están ubicados?')">¿Dónde están ubicados?</button>
+        <button class="pregunta-btn" onclick="enviarPregunta('¿Tienen servicio a domicilio?')">¿Tienen servicio a domicilio?</button>
+        <button class="pregunta-btn" onclick="enviarPregunta('¿Qué métodos de pago aceptan?')">¿Qué métodos de pago aceptan?</button>
+        <button class="pregunta-btn" onclick="enviarPregunta('¿Cómo puedo hacer una reserva?')">¿Cómo puedo hacer una reserva?</button>
+        <button class="pregunta-btn" onclick="enviarPregunta('¿Tienen estacionamiento?')">¿Tienen estacionamiento?</button>
+        <button class="pregunta-btn" onclick="enviarPregunta('¿Atienden pedidos grandes?')">¿Atienden pedidos grandes?</button>
+    </div>
+</div>
+
+<script src="../js/chatbot.js"></script>
+
+    <footer class="footer">
+        <div class="footer-features">
+            <div class="feature">
+                <i class="fas fa-history"></i>
+                <h4>MÁS DE 100 AÑOS</h4>
+                <p>Desde 1911 trabajando con el mejor producto del mar</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-fish"></i>
+                <h4>EL PRODUCTO MÁS FRESCO</h4>
+                <p>Pescados y mariscos directos de la lonja</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-fire"></i>
+                <h4>AHUMADOS ARTESANALES</h4>
+                <p>Descubre nuestros procesos de ahumado</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-store"></i>
+                <h4>TIENDA PROPIA</h4>
+                <p>También te servimos en nuestra tienda física</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-hand-holding-heart"></i>
+                <h4>SELECCIONAMOS POR TI</h4>
+                <p>Despreocúpate y disfruta del mejor género del mar</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> Carrera 1 #93-50 Chicó Alto, Bogotá</p>
+                <p><i class="fas fa-phone"></i> Tel: (57) 316 690 0508</p>
+                <p><i class="fas fa-envelope"></i> servicioalcliente@tramonti.com.co</p>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fas fa-plus"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
